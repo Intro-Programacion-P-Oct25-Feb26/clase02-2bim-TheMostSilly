@@ -32,8 +32,10 @@ public class Ejemplo102 {
             // el valor del nombre del estudiante sea:
             // Luis o Ana
             nombre = estudiantes[i];
-            if (nombre.equals("Luis")) {
-            
+            if (!nombre.equals("Luis")) {
+                /* el ! indica que se van a imprimir todos los valores 
+                que tenga el arreglo estudiantes a excepción de "Luis"
+                */
                 mensajeFinal = String.format("%sEstudiante:%s - promedio: "
                         + "%.4f\n", 
                         mensajeFinal,
